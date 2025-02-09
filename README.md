@@ -1,5 +1,7 @@
 # Sonoff USB Zigbee 3.0 firmware flasher:
 
+Fork of [this](https://github.com/william-sy/sonoff-zbdongle-p-fw-mac-Lin). Uses venv in the local repo and does not use root to execute the python scripts. Therefore you need to add your user to the serial group before using the scripts.
+
 This does not check firmware, it just flashes, so if you already have the lastest version it ill just overwrite it!
 
 This script is a combination of all the software to make the process a bit easier, use at own risk!
