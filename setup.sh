@@ -86,12 +86,12 @@ then
 fi
 
 echo -e "${RED}# Get device ready for flashing:${NC}"
-sudo python3 ./script/uartLog.py
+python3 ./script/uartLog.py
 
 echo -e "${RED}# Please supply the serial port again:${NC}"
 read SERIAL
 echo -e "${RED}# Flashing the device:${NC}"
-sudo python3 ./cc2538-bsl/cc2538-bsl.py -p ${SERIAL} -e -v -w --bootloader-sonoff-usb CC1352P2_CC2652P_launchpad_coordinator_${FIRMWARE}.hex
+python3 ./cc2538-bsl/cc2538-bsl.py -p ${SERIAL} -e -v -w --bootloader-sonoff-usb CC1352P2_CC2652P_launchpad_coordinator_${FIRMWARE}.hex
 
 
 echo -e "${RED}# Cleaning up env, Till next time!${NC}"
