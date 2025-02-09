@@ -305,18 +305,13 @@ def enterBoot(serialPort, delay=False):
 
 
 if __name__ == "__main__":
-    logger.debug("This is a debug log")
-    logger.info("This is an info log")
-    logger.critical("This is critical")
-    logger.error("An error occurred\n")
-
     # pyinstaller -i butter.ico -F d:/桌面/seven.py
 
     uart_list = [0]
     uart_refresh()  # 获取已有的串口信息
 
     try:
-        name = input("选择串口(输入串口序号即可):")
+        name = input("Provide the serial device name:")
 
         SERIAL_PORT_CFG = {'name': name,
                            'baudrate': 115200,
